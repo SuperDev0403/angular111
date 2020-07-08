@@ -1,0 +1,82 @@
+<!-- ========== Left Sidebar Start ========== -->
+<ng-template #contentTemplate>
+    <!--- Sidemenu -->
+    <div id="sidebar-menu">
+        <ul class="metismenu" id="side-menu" #sideMenu>
+
+            <li>
+                <a routerLink="/" routerLinkActive="active">
+                    <i class="fe-airplay"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/calendar" routerLinkActive="active">
+                    <i class="far fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/inbox" routerLinkActive="active">
+                    <i class="far fa-envelope"></i>
+                    <span class="badge badge-success badge-pill float-right">199</span>
+                    <span>Inbox</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/telephony" routerLinkActive="active">
+                    <i class="fa fa-phone"></i>
+                    <span>Telephony</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="" routerLinkActive="active">
+                    <i class="far fa-user"></i>
+                    <span>Patient Room</span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="nav-second-level nav collapse" aria-expanded="false">
+                    <li>
+                        <a href="javascript: void(0);" aria-expanded="false">Homer Simpson
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-third-level nav" aria-expanded="false">
+                            <li>
+                                <a href="javascript: void(0);">OneView</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);">Demographic</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);">CPP</a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="clearfix"></div>
+</ng-template>
+
+
+<div class="left-side-menu">
+    <div class="slimscroll-menu" appSlimScroll *ngIf="!isCondensed">
+        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+    </div>
+
+    <div class="slimscroll-menu" *ngIf="isCondensed">
+        <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+    </div>
+</div>
+<!-- Left Sidebar End -->
