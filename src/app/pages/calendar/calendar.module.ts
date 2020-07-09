@@ -19,7 +19,6 @@ import { UIModule } from '../../shared/ui/ui.module';
 import { CalendarComponent } from './calendar.component';
 
 @NgModule({
-  // tslint:disable-next-line: max-line-length
   declarations: [CalendarComponent],
   imports: [
     CommonModule,

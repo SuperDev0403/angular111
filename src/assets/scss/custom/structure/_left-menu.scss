@@ -29,11 +29,11 @@
   li {
     a {
       padding: 8px 20px;
-      color: $menu-item;
+      color: white;
       display: block;
       position: relative;
       transition: all 0.4s;
-      font-size: 0.875rem;
+      font-size: 1.1rem;
       &:focus,
       &:hover {
         color: $menu-item-hover;
@@ -65,9 +65,9 @@
 // Sidemenu
 .left-side-menu {
   width: $leftbar-width;
-  background: $bg-leftbar;
+  background-color: #9EA7BE;
   bottom: 0;
-  padding: 20px 0;
+  // padding: 20px 0;
   position: fixed;
   transition: all 0.2s ease-out;
   top: $topbar-height;
@@ -79,13 +79,13 @@
   > ul {
     > li {
       > a {
-        color: $menu-item;
+        color: white;
         display: block;
         padding: 13px 20px;
         position: relative;
         transition: all 0.4s;
         font-family: $font-family-secondary;
-        font-size: 0.95rem;
+        font-size: 1.3rem;
 
         &:hover,
         &:focus,

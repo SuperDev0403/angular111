@@ -5,18 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { NgbCollapseModule, NgbDatepickerModule, NgbTimepickerModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClickOutsideModule } from 'ng-click-outside';
 
-import { SlimscrollDirective } from './slimscroll.directive';
-import { CountToDirective } from './count-to.directive';
 
 import { PreloaderComponent } from './preloader/preloader.component';
 import { PagetitleComponent } from './pagetitle/pagetitle.component';
-import { PortletComponent } from './portlet/portlet.component';
-import { EmaillistComponent } from './emaillist/emaillist.component';
-import { WidgetComponent } from './widget/widget.component';
+
 
 @NgModule({
-  // tslint:disable-next-line: max-line-length
-  declarations: [SlimscrollDirective, PreloaderComponent, PagetitleComponent, PortletComponent, WidgetComponent, EmaillistComponent, CountToDirective],
+  declarations: [PreloaderComponent, PagetitleComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -26,7 +21,6 @@ import { WidgetComponent } from './widget/widget.component';
     NgbTimepickerModule,
     NgbDropdownModule
   ],
-  // tslint:disable-next-line: max-line-length
-  exports: [SlimscrollDirective, PreloaderComponent, PagetitleComponent, PortletComponent, WidgetComponent, EmaillistComponent, CountToDirective]
+  exports: [PreloaderComponent, PagetitleComponent]
 })
 export class UIModule { }

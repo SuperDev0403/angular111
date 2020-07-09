@@ -1,51 +1,49 @@
-<!-- Topbar Start -->
 <div class="navbar-custom">
   <ul class="list-unstyled topnav-menu float-right mb-0">
-
     <li class="d-none d-sm-block">
       <form class="app-search">
         <div class="app-search-box">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search...">
             <div class="input-group-append">
               <button class="btn" type="submit">
                 <i class="fe-search"></i>
               </button>
             </div>
+            <input type="text" class="form-control" placeholder="Lookup">
           </div>
         </div>
       </form>
     </li>
 
-    <!-- <li class="dropdown notification-list">
+    <li class="dropdown notification-list" style="margin-top:5px">
       <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
         aria-expanded="false" id="question_navitem">
         <i class="far fa-question-circle" style="font-size:24px"></i>
       </a>
-    </li> -->
+    </li>
 
-    <li class="dropdown notification-list">
+    <li class="dropdown notification-list" style="margin-top:5px">
       <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
         aria-expanded="false" id="users_navitem">
         <i class="far fa-user" style="font-size:21px"></i>
       </a>
     </li>
 
-    <li class="dropdown notification-list">
+    <li class="dropdown notification-list" style="margin-top:5px">
       <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
         aria-expanded="false" id="calendar_navitem">
         <i class="far fa-calendar" style="font-size:21px"></i>
       </a>
     </li>
 
-    <li class="dropdown notification-list">
+    <li class="dropdown notification-list" style="margin-top:5px">
       <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
         aria-expanded="false" id="calendar_navitem">
         <i class="fa fa-phone" style="font-size:21px"></i>
       </a>
     </li>
 
-    <li class="dropdown notification-list" ngbDropdown>
+    <li class="dropdown notification-list" ngbDropdown style="margin-top:5px">
       <a class="nav-link dropdown-toggle  waves-effect waves-light" href="javascript: void(0);" role="button"
         aria-haspopup="false" aria-expanded="false" ngbDropdownToggle id="notificationDropdown">
         <i class="far fa-envelope" style="font-size:24px"></i>
@@ -57,43 +55,18 @@
       <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" ngbDropdownToggle id="profileDropdown"
         href="javascript: void(0);" role="button" aria-haspopup="false" aria-expanded="false">
         <img src="assets/images/users/user-6.jpg" alt="user-image" class="rounded-circle">
-        <span class="pro-user-name ml-1">
-          Eric <i class="mdi mdi-chevron-down"></i>
-        </span>
       </a>
     </li>
 
-    <li class="dropdown notification-list" id="night_mode">
+    <li class="dropdown notification-list" id="night_mode" style="margin-top:5px">
       <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
         aria-expanded="false" id="calendar_navitem">
         <i class="fas fa-moon" (click)="darkSidebar()" style="font-size:21px" *ngIf="showFirst"></i>
-      </a>
-    </li>
-
-    <li class="dropdown notification-list" id="day_mode">
-      <a class="nav-link waves-effect waves-light" href="javascript: void(0);" role="button" aria-haspopup="false"
-        aria-expanded="false" id="calendar_navitem">
         <i class="fas fa-sun" (click)="lightTopbar()" style="font-size:21px" *ngIf="showSecond"></i>
       </a>
     </li>
 
-
-
   </ul>
-
-  <!-- LOGO -->
-  <div class="logo-box">
-    <a href="/" class="logo text-center">
-      <span class="logo-lg">
-        <img src="assets/images/logo-light.png" alt="" height="18">
-        <!-- <span class="logo-lg-text-light">Xeria</span> -->
-      </span>
-      <span class="logo-sm">
-        <!-- <span class="logo-sm-text-dark">X</span> -->
-        <img src="assets/images/logo-sm.png" alt="" height="24">
-      </span>
-    </a>
-  </div>
 
   <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
     <li>
@@ -102,5 +75,15 @@
       </button>
     </li>
   </ul>
+
+  <div class="logo-box">
+    <a href="/" class="logo text-center">
+      <span class="logo-lg">
+        <img src="assets/images/logo-light.png" alt="" height="18">
+      </span>
+      <span class="logo-sm">
+        <img src="assets/images/logo-light.png" alt="" height="18">
+      </span>
+    </a>
+  </div>
 </div>
-<!-- end Topbar -->

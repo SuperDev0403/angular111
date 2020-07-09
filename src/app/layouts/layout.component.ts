@@ -28,16 +28,10 @@ export class LayoutComponent implements OnInit, AfterViewInit {
     }
   }
 
-  /**
-   * on settings button clicked from topbar
-   */
   onSettingsButtonClicked() {
     document.body.classList.toggle('right-bar-enabled');
   }
 
-  /**
-   * On mobile toggle button clicked
-   */
   onToggleMobileMenu() {
     document.body.classList.toggle('sidebar-enable');
     if (!this.isMobile()) {

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-telephony',
   templateUrl: './telephony.component.html',
@@ -15,10 +14,6 @@ export class TelephonyComponent implements OnInit {
 
   ngOnInit() {
     this.breadCrumbItems = [{ label: 'Home', path: '/' }, { label: 'Telephony', path: '/', active: true }];
-    this._fetchData();
   }
 
-  private _fetchData() {
-
-  }
 }
